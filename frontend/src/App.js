@@ -33,7 +33,7 @@ function App() {
         description: desc,
       })
       .then((res) => {
-        console.log('Add result', res.data)
+        console.log('Add result', res.data);
         // setTodoList()
       });
   };
