@@ -16,6 +16,7 @@ async def fetch_all_todos():
     cursor = collection.find({})
     async for document in cursor:
         todos.append(Todo(**document))
+        print(document['title'])
     return todos
 
 async def create_todo(todo):
